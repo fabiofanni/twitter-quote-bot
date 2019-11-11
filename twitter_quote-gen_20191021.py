@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
 
 
 #initi block
@@ -41,10 +40,6 @@ df.drop(['Quote','Author'], axis=1)
 pd.options.display.max_colwidth = 200
 df = df.dropna()
 
-
-# In[16]:
-
-
 time_interval = 10
 
 while True:
@@ -52,10 +47,4 @@ while True:
     quote = quote.lstrip("0123456789=,")
     api.update_status(quote)
     time.sleep(time_interval)
-
-
-# In[ ]:
-
-
-
 
